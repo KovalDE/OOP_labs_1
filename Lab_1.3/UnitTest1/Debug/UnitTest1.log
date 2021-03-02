@@ -1,0 +1,6 @@
+﻿  UnitTest1.cpp
+W:\Labs OOP\Lab_1.3\Lab_1.3\Money.cpp(80,14): warning C4244: =: преобразование "double" в "long", возможна потеря данных
+W:\Labs OOP\Lab_1.3\Lab_1.3\Money.cpp(81,20): warning C4244: =: преобразование "double" в "unsigned int", возможна потеря данных
+W:\Labs OOP\Lab_1.3\UnitTest1\UnitTest1.cpp(21,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+W:\Labs OOP\Lab_1.3\UnitTest1\UnitTest1.cpp(22,10): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  UnitTest1.vcxproj -> W:\Labs OOP\Lab_1.3\Debug\UnitTest1.dll
