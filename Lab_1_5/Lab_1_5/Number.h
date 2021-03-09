@@ -19,7 +19,5 @@ public:
 	friend Number Mult(Number b, Number c);
 	friend Number Substr(Number b, Number c);
 
-	Number SqrtAction(Number a);
-	Number PiPow(Number a);
 };
 

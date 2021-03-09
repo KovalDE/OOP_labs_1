@@ -19,16 +19,17 @@ void Real::Read()
 	Init(n);
 }
 
-void Real::SqrtAction()
+Real Real::Sqrt(int n)
 {
-	Number t;
-	t = number.SqrtAction(number);
-	cout << t.getDouble();
+	Real t;
+	t.number.setDouble(pow(number.getDouble(),1./n));
+	return t;
 }
 
-void Real::PiPower()
+Real Real::PiPower(int n)
 {
-	Number t;
-	t = number.PiPow(number);
-	cout << t.getDouble();
+	Real t;
+	double pi = atan(1)*4;
+	t.number.setDouble(pow(pi,n));
+	return t;
 }

@@ -1,5 +1,6 @@
 #pragma once
 #include "Number.h"
+
 class Real
 {
 	Number number;
@@ -10,8 +11,8 @@ public:
 		void Display() const;
 		void Read();
 
-		void SqrtAction();
-		void PiPower();
+		Real Sqrt(int n);
+		static Real PiPower(int n);
 };
 
 

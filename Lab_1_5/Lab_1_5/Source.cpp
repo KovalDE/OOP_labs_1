@@ -9,11 +9,13 @@ int main()
 	Real s;
 	s.Read();
 	s.Display();
+	int n;
+	cout << "N: "; cin >> n;
 	cout << "SQRT : ";
-	s.SqrtAction();
+	s.Sqrt(n).Display();
 	cout << endl;
 	cout << "Pi in power of number : ";
-	s.PiPower();
+	Real::PiPower(n).Display();
 	cout << endl;
 	cout << endl;
 	Number l, r;
