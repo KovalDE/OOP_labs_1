@@ -1,17 +1,22 @@
 #include "Real.h"
 #include <iostream>
 #include <string>
+
 using namespace std;
 int main()
 {
 	Real s;
 	s.Read();
 	s.Display();
-	cout << "SQRT: ";
-	s.SqrtAction();
-	cout << endl << endl;
-	cout << "Pi int power of number : ";
-	s.PiPower();
+	int n;
+	cout << "N: "; cin >> n;
+	cout << "SQRT : ";
+	s.Sqrt(n).Display();
+	cout << endl;
+	cout << "Pi in power of number : ";
+	Real::PiPower(n).Display();
+	cout << endl;
+	cout << endl;
 
 	Real::Number l, r;
 	l.Read();

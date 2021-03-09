@@ -19,9 +19,6 @@ public:
 
 		friend Number Mult(Number b, Number c);
 		friend Number Substr(Number b, Number c);
-
-		Number SqrtAction(Number b);
-		Number PiPower(Number b);
 	};
 
 	Number getNumber() const { return number; }
@@ -30,8 +27,8 @@ public:
 	void Display() const;
 	void Read();
 
-	void SqrtAction();
-	void PiPower();
+	Real Sqrt(int n);
+	static Real PiPower(int n);
 private:
 	Number number;
 };

@@ -48,32 +48,21 @@ void Real::Number::Read()
 	Init(a);
 }
 
-Real::Number Real::Number::SqrtAction(Real::Number b)
+Real Real::Sqrt(int n)
 {
-	Real::Number res;
-	res.a = sqrt(b.a);
-	return res;
+	Real t;
+	t.number.setDouble(pow(number.getDouble(), 1. / n));
+	return t;
 }
 
-void Real::SqrtAction()
+Real Real::PiPower(int n)
 {
-	Real::Number t = number.SqrtAction(number);
-	cout << t.getDouble();
+	Real t;
+	double pi = atan(1) * 4;
+	t.number.setDouble(pow(pi, n));
+	return t;
 }
 
-Real::Number Real::Number::PiPower(Real::Number b)
-{
-	Real::Number res;
-	double pi = 3.14159;
-	res.a = pow(pi, b.a);
-	return res;
-}
-
-void Real::PiPower()
-{
-	Real::Number t = number.PiPower(number);
-	cout << t.getDouble();
-}
 
 Real::Number Mult(Real::Number b, Real::Number c)
 {
